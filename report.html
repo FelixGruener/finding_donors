@@ -14196,10 +14196,13 @@ As mentioned in the previous section, the alorithim is suitable as:</p>
 <ol>
 <li>After shuffle, split and initial training using the training data, an initial estimate of the gradient is made (based on the parameters and chosen learning rate). </li>
 <li>The algorithm will go through the training set, in iterations, and at each training example , it will perform an adjustment on the gradient approximation. This is based on the feedback the current approximation gets versus the current training example.</li>
-<li>Several passes may be made on the training set until the algorithm begins to reach convergence (important to shuffle data to avoid cycles). </li>
+<li><p>Several passes may be made on the training set until the algorithm begins to reach convergence (important to shuffle data to avoid cycles).</p>
+</li>
+<li><p>You have a map now (training data) and you apply this map to your testing data</p>
+</li>
+<li><p>Finally once we are satisfied how our map leads us  on our testing data to the desired destination, we can use the map for new data.</p>
+</li>
 </ol>
-<p>4.The model can be evaluated on the training data, but this will not provide a useful indication of the performance of the model as a predictive model, as it has seen all of this data before.The model evaluates the loss across all of the test patterns, as well as any other metrics specified when the model was compiled, like classification accuracy. A list of evaluation metrics is returned.</p>
-<p>5.Make Predictions. Finally, once we are satisfied with the performance of our fit model, we can use it to make predictions on new data.</p>
 <p><strong>References</strong></p>
 <ol>
 <li><a href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Background">https://en.wikipedia.org/wiki/Stochastic_gradient_descent#Background</a></li>
